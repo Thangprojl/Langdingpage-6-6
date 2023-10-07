@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans";
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* ================= Commons ====================== */
+a {
+    text-decoration: none;
+}
+
+.heading-lv1 {
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: -2.24px;
+}
+.heading-lv2 {
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+}
+
+.desc-lv1 {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.667;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    min-width: 172px;
+    padding: 0 20px;
+    background: #5d3bee;
+    color: #fdfdfd;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66;
+}
+
+/*  =============================== Header ======================= */
+.header {
+    margin-top: 20px;
+}
+.header__container {
+    width: min(calc(100% - 40px), 1330px);
+    margin-right: auto;
+    margin-left: auto;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__email-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header__email-logo {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+}
+.header__email {
+    color: #080415;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 1.36;
+    text-decoration: underline;
+}
+
+.header__logo-link {
+    display: flex;
+    justify-content: end;
+    margin-left: 50px;
+}
+
+.header__logo {
+    display: inline-block;
+    width: 50%;
+}
+
+.header__nav-bar {
+    display: block;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin-right: -22px;
+    margin-left: -22px;
+}
+
+.header__nav-link {
+    display: block;
+    padding: 22px;
+    color: #51586a;
+    font-size: 1.7rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.header__nav-link:hover {
+    text-shadow: 1px 0 0;
+}
+
+/* =======================Hero======================== */
+.hero {
+    padding-top: 44px;
+}
+.hero__img-wrap {
+    position: relative;
+}
+.hero__retangle-main {
+    position: absolute;
+    right: -108px;
+    bottom: 0;
+    width: 156%;
+}
+.hero__img {
+    position: relative;
+    display: flex;
+    width: 90%;
+    z-index: 1;
+}

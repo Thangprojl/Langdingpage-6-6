@@ -1,0 +1,89 @@
+/* ======================== PC ============================= */
+@media screen and (min-width: 992px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+/* ======================= Tablet and mobile ==================== */
+@media screen and (max-width: 991.96px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header__logo-link {
+        justify-content: start;
+        margin-left: initial;
+    }
+
+    .header__nav-logo {
+        width: 45px;
+        height: 45px;
+    }
+    .header__mobile-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.8s;
+    }
+
+    #header__nav-check:checked ~ .header__mobile-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__mobile-content {
+        position: fixed;
+        inset: 0 0 0 40%;
+        z-index: 9999;
+        display: block;
+        background-color: #fff;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+    #header__nav-check:checked ~ .header__mobile-content {
+        transform: translateX(0%);
+    }
+
+    .header__nav-mobile {
+        padding: 30px;
+    }
+    .header__nav-mobile--link {
+        display: inline-block;
+        padding: 15px 20px;
+        color: #51586a;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}
+
+/*===================== Tablet ======================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .show-on-tablet {
+        display: inline-block;
+    }
+}
+
+/* ====================Mobile========================= */
+@media (max-width: 767.87px) {
+    .header__inner {
+        justify-content: initial;
+    }
+    .header__logo {
+        order: 0;
+        width: 45%;
+    }
+
+    .header__email-wrap {
+        order: 2;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .header__mobile {
+        order: 3;
+    }
+}
